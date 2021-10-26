@@ -3,6 +3,7 @@
 .heroSectionContainer {
   background-image: url("/heroimage.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .navbarContainer {
