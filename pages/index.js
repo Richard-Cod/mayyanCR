@@ -21,16 +21,20 @@ export default function Home() {
 
       <PartnairesSection />
 
-      {[1,2,3].map((value , index) => <BlockItem />)}
+      {[1,2,3].map((value , index) => <BlockItem isOdd={index % 2 == 0} />)}
 
-      <RayImage />
-
-      {[1,2,3,4].map((value , index) => <BlockItem />)}
-
-      <RayImage />
+      <RayImage texte="Blockchain gives Africa economic identity" img='/ray2.jpg' />
 
 
-      {[1,2,3,4].map((value , index) => <BlockItem />)}
+
+      {[1,2,3].map((value , index) => <BlockItem isOdd={index % 2 == 0} />)}
+
+
+      <RayImage texte="Blockchain is Africa's future" img='/ray3.jpg' />
+
+
+      {[1,2,3].map((value , index) => <BlockItem isOdd={index % 2 == 0} />)}
+
 
       <SocialsSection />
 

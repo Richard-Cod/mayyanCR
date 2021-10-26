@@ -9,3 +9,39 @@
 .navbarContainer {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* hide scrollbar but allow scrolling */
+div {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.scrollBox {
+  /* background: orange;
+    height: 180px;
+    width: 400px;
+    margin: 10px -400px; */
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+}
+
+#scrollBox:hover {
+  -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes move {
+  0% {
+    margin-left: -400px;
+  }
+  100% {
+    /* margin-left: 800px; */
+  }
+}
