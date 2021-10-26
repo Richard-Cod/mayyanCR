@@ -1,0 +1,10 @@
+/** @format */
+
+.heroSectionContainer {
+  background-image: url("/heroimage.jpg");
+  background-size: cover;
+}
+
+.navbarContainer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
