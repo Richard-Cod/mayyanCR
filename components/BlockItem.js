@@ -25,7 +25,7 @@ function BlockItem({isOdd = false}) {
             color : isOdd ? "black" : "#fff",
         }} className={"flex flex-col px-6 py-6 "+flexDirection}>
 
-                <img className="lg-w-[50%]" src={isOdd ? "/fille.webp" :   "/guy.webp"  } style={{
+                <img className="lg:w-[50%]" src={isOdd ? "/fille.webp" :   "/guy.webp"  } style={{
                     objectFit : "cover"
                 }} />
 
